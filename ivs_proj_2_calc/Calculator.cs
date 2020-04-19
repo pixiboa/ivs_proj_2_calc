@@ -1131,6 +1131,7 @@ namespace ivs_proj_2_calc
         /// <param name="e">Dáta udalosti, ktoré sa posielajú do danej metódy</param>
         private void btn_napoveda_Click(object sender, EventArgs e)
         {
+           
             Help.ShowHelp(this, helpProvider1.HelpNamespace);
             btn_enter.Focus();
         }
