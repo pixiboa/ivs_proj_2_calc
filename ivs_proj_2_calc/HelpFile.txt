@@ -1,0 +1,65 @@
+Vitajte v nápovede.
+
+V tomto textovom súbore sa dozviete, ako používať aplikáciu Calculator.
+
+Hneď na začiatku spustenia si môžete všimnúť grafické rozhranie. Toto rozhranie sa skladá z tlačidiel a dvoch textových boxov. Celé grafické rozhranie
+má fixnú veľkosť, ktorá sa nedá upravovať. Tlačidlá, ktoré sa nachádzajú pod výsledkom je možno aktivovať kliknutím myšou alebo stlačením tlačidla na klávesnici
+pre vyžadovanú číslicu alebo operáciu.
+
+Zoznam klávesových skratiek:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Tlačidlo "+" 		   - 	kliknutie na operáciu sčítania
+Tlačdilo "-" 		   -	kliknutie na operáciu odčítania
+Tlačidlo "*" 		   - 	kliknutie na operáciu násobenia
+Tlačidlo "/" 		   - 	kliknutie na operáciu delenia
+Tlačidlo "," alebo "." 	   -    napásanie decimálnej čiarky (môže byť vo výsledku len jedna)
+Tlačidlo "Enter" alebo "=" - 	kliknutie na operáciu výsledku (vypočíta daný výraz a ukončí sekvenciu)
+Tlačidlá "0" až "9"  	   - 	napísanie číslice do textového boxu (buď numPad alebo decimálne pod f1-f12)
+Tlačidlo "Delete"	   - 	vymazanie histórie a výsledku (nastaví defaultné nastavenia)
+Tlačidlo "Backspace"	   -	vymaže posledné číslo z textového boxu výsledku (funguje ako normálny backspace)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Popis tlačidiel a funkcií:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Textový box výsledku: 		  -	je v ňom defaultne napísaná číslica 0. Je to textový box, do ktorého píšeme číslice, s ktorými chceme 
+		      			vykonávať operácie a po vykonaní operácií alebo kliknutí na tlačidlo výsledku je do tohto boxu napísaný výsledok.
+		      			Výsledky sa do neho zapisujú priebežne po každej operácií. 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Textový box histórie: 		  -	defaultne nastavený ako prázdny. Má vertikálny posuvný bar, ak by bola história príliš veľká. Do histórie sa zapisujú číslice a ich operácie
+		      			alebo medzivýsledky. História sa dá vymazať stlačením tlačidla "Delete" ("C").
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Tlačidlo Delete ("C"): 		  -	po stlačení tohto tlačidla sa celá aplikácia vynuluje a vráti do defaultných nastavení. Vymaže sa história, história výsledkov aj medzivýsledkov
+		       		 	a textový box výsledku sa nastavý na "0".
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Tlačidlo Clear ("CE"): 		  -	po stlačení tohto tlačidla sa vymaže výsledok, ale história ostane nezmenená. Môžeme pokračovať v sekvencií.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Tlačidlo Backspace: 		  -	vymaže posledné číslo z textového boxu výsledku (funguje ako normálny backspace).
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Tlačidlá s číslicami (",", "0" až "9"): tlačidlá s číslicami alebo decimálnou čiarkou slúžia na napísanie danej hodnoty do textového boxu výsledku.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Tlačidlá operácií ("+", "-", "*", "/"): slúžia na vypočítanie danej operácie, kde prvý parameter (číslo) operácie je po kliknutí na operáciu pridaný do histórie spolu s operáciou
+					a po opätovnom stlačení operácie je predchádzajúca operácia vypočítaná už aj s druhým parametrom. Násobenie a delenie má prednosť pred sčítaním a odčítaním.
+					Ak bolo posledné stlačené tlačidlo operácie, táto operácia sa prepíše na novú stlačenú operáciu.
+					POZOR: deliť nulou sa nesmie ! :-)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Tlačidlo výsledku ("="): 	  -	slúži na ukončenie sekvencie výrazu, ktorý chceme vypočítať. Stlačením tohto tlačidla sa história ukončí so znamienkom "=" a do 
+					textového boxu výsledku sa vypíše výsledok. Ak chceme pokračovať, môžeme ďalej stláčať číslice a operácie (budeme pokračovať v sekvencií), alebo
+					môžeme vymazať históriu a pokračovať od znova.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Tlačidlo druhej mocniny ("x2"):	  -	slúži na vypočítanie druhej mocniny z čísla, ktoré sa nachádza v textovom boxe výsledku. Výsledok je hneď napísaný do výsledku. Ak stlačíme číslo napr. číslicu 2
+					a hneď za ňou toto tlačidlo, do výsledku sa napíše "4" a do histórie funkcia "sqrt(2)".
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Tlačidlo faktoriálu ("x!"): 	  -	slúži na vypočítanie faktoriálu zo zadaného čísla. Funguje rovnako ako tlačidlo druhej mocniny. Ak stlačíme číslo a hneď za ním túto funkciu, do výsledku
+			    		sa hneď napíše faktoriál z tohto čísla a do histórie sa napíše funkcia "fact(x)"
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Tlačidlo všeobecnej mocniny ("xy"): 	slúži na vypočítanie mocniny z čísla x na y-tý exponent. Prvá číslica, ktorá je zadaná pred stlačením tohto tlačidla je základ mocniny (x)
+				    	druhá číslica zadaná po tomto tlačidle je exponent (y). Ak chceme vypočítať 5 mocninu z čísla 3 -> stlačíme číslicu 3, potom tlačidlo všeobecnej mocniny
+				    	a potom číslicu 5. Do histórie sa napíše "3^5", kde "^" znamená "na".
+				    	POZOR: exponent je prirodzené číslo.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Tlačidlo všeobecnej odmocniny ("√"):	slúži na vypočítanie všeobecnej odmocniny. Prvé číslo zadané pred stlačením tohto tlačidla je exponent (koľká odmocnina), druhé číslo, zadané po stlačení 
+				     	tohto tlačidla je základ odmocniny (z ktorého čísla). Ak chceme vypočítať 3 odmocninu z čísla 8 -> stlačíme číslicu 3, potom tlačidlo všeobecnej odmocniny
+				     	a potom číslicu 8. Do histórie sa napíše "3√8". Výsledkom tohto príkaldu bude číslo 2.
+				     	POZOR: základ odmocniny (číslo pod odmocninou) musí byť väčší ako 0. 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
