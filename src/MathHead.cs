@@ -6,58 +6,58 @@ using System.Threading.Tasks;
 
 /*-------------------------------------------------------------
  - TEAM:        BRAINSTORM
- - AUTHORS:     xfudor00 <František Fúdor>
- -              xrazus00 <Andrej Rázus>
- -              xmalik22 <Oto Malík>
+ - AUTHORS:     xfudor00 <FrantiÅ¡ek FÃºdor>
+ -              xrazus00 <Andrej RÃ¡zus>
+ -              xmalik22 <Oto MalÃ­k>
  -------------------------------------------------------------*/
 
 namespace ivs_proj_2_calc
 {
     /// <summary>
-    /// Matematická kninica
+    /// MatematickÃ¡ kniÅ¾nica
     /// </summary>
     public class MathHead
     {
         /// <summary>
-        /// Add metóda, ktorá berie dva parametre "x" a "y", tieto parametre sèíta
+        /// Add metÃ³da, ktorÃ¡ berie dva parametre "x" a "y", tieto parametre sÃ¨Ã­ta
         /// </summary>
-        /// <param name="x">Hodnota pred znamienkom sèítania</param>
-        /// <param name="y">Hodnota za znamienkom sèítania</param>
-        /// <returns>Vracia súèet hodnôt "x" a "y"</returns>
+        /// <param name="x">Hodnota pred znamienkom sÃ¨Ã­tania</param>
+        /// <param name="y">Hodnota za znamienkom sÃ¨Ã­tania</param>
+        /// <returns>Vracia sÃºÃ¨et hodnÃ´t "x" a "y"</returns>
         public double Add(double x, double y)
         {
             return x + y;
         }
 
         /// <summary>
-        /// Sub metóda, ktorá berie dva parametre "x" a "y", tieto parametre odèíta
+        /// Sub metÃ³da, ktorÃ¡ berie dva parametre "x" a "y", tieto parametre odÃ¨Ã­ta
         /// </summary>
-        /// <param name="x">Hodnota pred znamienkom odèitania</param>
-        /// <param name="y">Hodnota za znamienkom odèítania</param>
-        /// <returns>Vracia rozdiel hodnôt "x" a "y"</returns>
+        /// <param name="x">Hodnota pred znamienkom odÃ¨itania</param>
+        /// <param name="y">Hodnota za znamienkom odÃ¨Ã­tania</param>
+        /// <returns>Vracia rozdiel hodnÃ´t "x" a "y"</returns>
         public double Sub(double x, double y)
         {
             return x - y;
         }
 
         /// <summary>
-        /// Mul metóda, ktorá berie dva parametre "x" a "y", tieto parametre vynásobí
+        /// Mul metÃ³da, ktorÃ¡ berie dva parametre "x" a "y", tieto parametre vynÃ¡sobÃ­
         /// </summary>
-        /// <param name="x">Hodnota pred znamienkom násobenia</param>
-        /// <param name="y">Hodnota za znamienkom násobenia</param>
-        /// <returns>Vracia súèin hondôt "x" a "y"</returns>
+        /// <param name="x">Hodnota pred znamienkom nÃ¡sobenia</param>
+        /// <param name="y">Hodnota za znamienkom nÃ¡sobenia</param>
+        /// <returns>Vracia sÃºÃ¨in hondÃ´t "x" a "y"</returns>
         public double Mul(double x, double y)
         {
             return x * y;
         }
 
         /// <summary>
-        /// Div metóda, ktorá berie dva parametre "x" a "y", tieto parametre vydelí.
-        /// Ak je hodnota "y" (delite¾) rovnı nule, vyhodí vınimku "DivideByZero".
+        /// Div metÃ³da, ktorÃ¡ berie dva parametre "x" a "y", tieto parametre vydelÃ­.
+        /// Ak je hodnota "y" (deliteÂ¾) rovnÃ½ nule, vyhodÃ­ vÃ½nimku "DivideByZero".
         /// </summary>
-        /// <param name="x">Hodnota nad zlomkovou èiarou (èitate¾)</param>
-        /// <param name="y">Hodnota pod zlomkovou èiarou (delite¾)</param>
-        /// <returns>Vracia podiel hodnôt "x" a "y"</returns>
+        /// <param name="x">Hodnota nad zlomkovou Ã¨iarou (Ã¨itateÂ¾)</param>
+        /// <param name="y">Hodnota pod zlomkovou Ã¨iarou (deliteÂ¾)</param>
+        /// <returns>Vracia podiel hodnÃ´t "x" a "y"</returns>
         public double Div(double x, double y)
         {
             if (y == 0.0)
@@ -68,11 +68,11 @@ namespace ivs_proj_2_calc
         }
 
         /// <summary>
-        /// Exp metóda, ktorá berie dva parametre "x" a "exp". Metóda poèíta všeobecnú mocninu.
-        /// Ak je vısledkom nekoneèno alebo "NaN", vyhodí vınimku "NotFiniteNumber".
+        /// Exp metÃ³da, ktorÃ¡ berie dva parametre "x" a "exp". MetÃ³da poÃ¨Ã­ta vÅ¡eobecnÃº mocninu.
+        /// Ak je vÃ½sledkom nekoneÃ¨no alebo "NaN", vyhodÃ­ vÃ½nimku "NotFiniteNumber".
         /// </summary>
-        /// <param name="x">Základ monciny (moncenec)</param>
-        /// <param name="exp">Hodnota exponentu (mocnite¾) - je prirodzené èíslo (hodnota väèšia ako 0)</param>
+        /// <param name="x">ZÃ¡klad monciny (moncenec)</param>
+        /// <param name="exp">Hodnota exponentu (mocniteÂ¾) - je prirodzenÃ© Ã¨Ã­slo (hodnota vÃ¤Ã¨Å¡ia ako 0)</param>
         /// <returns>Vracia mocninu</returns>
         public double Exp(double x, int exp)
         {
@@ -98,21 +98,21 @@ namespace ivs_proj_2_calc
         }
 
         /// <summary>
-        /// Sqrt metóda, ktorá berie jeden parameter "x". Metóda poèíta druhú mocninu zadaného parametru.
+        /// Sqrt metÃ³da, ktorÃ¡ berie jeden parameter "x". MetÃ³da poÃ¨Ã­ta druhÃº mocninu zadanÃ©ho parametru.
         /// </summary>
-        /// <param name="x">Hodnota, ktorú chceme umocni na druhú</param>
-        /// <returns>Vracia druhú mocninu hodnoty "x"</returns>
+        /// <param name="x">Hodnota, ktorÃº chceme umocniÂ na druhÃº</param>
+        /// <returns>Vracia druhÃº mocninu hodnoty "x"</returns>
         public double Sqrt(double x)
         {
             return x * x;
         }
 
         /// <summary>
-        /// Fact metóda, ktorá berie jeden parameter "x". Metóda poèíta faktoriál zo zadaného parametru.
-        /// Ak je parameter rovnı 0 alebo 1, vısledkom je hodnota 1. Vyuíva rekurziu.
+        /// Fact metÃ³da, ktorÃ¡ berie jeden parameter "x". MetÃ³da poÃ¨Ã­ta faktoriÃ¡l zo zadanÃ©ho parametru.
+        /// Ak je parameter rovnÃ½ 0 alebo 1, vÃ½sledkom je hodnota 1. VyuÅ¾Ã­va rekurziu.
         /// </summary>
-        /// <param name="x">Hodnota, z ktorej chceme získa faktoriál</param>
-        /// <returns>Vracia faktoriál z hodnoty "x" a vynásobí ho so znova zavolanou funkciou, kde sa hodnota "x" zníi o 1, a dokım nie je hodnota "x" rovná 1</returns>
+        /// <param name="x">Hodnota, z ktorej chceme zÃ­skaÂ faktoriÃ¡l</param>
+        /// <returns>Vracia faktoriÃ¡l z hodnoty "x" a vynÃ¡sobÃ­ ho so znova zavolanou funkciou, kde sa hodnota "x" znÃ­Å¾i o 1, aÅ¾ dokÃ½m nie je hodnota "x" rovnÃ¡ 1</returns>
         public UInt64 Fact(UInt64 x)
         {
             if (x == 1 || x == 0)
@@ -122,13 +122,13 @@ namespace ivs_proj_2_calc
         }
 
         /// <summary>
-        /// Root metóda, berie dva parametre "x" a "n". Metóda poèíta "n"-tú odmocninu z èísla "x".
-        /// Ak je hodnota "n" rovná nule, vyhodí vınimku "DivideByZero".
-        /// Ak je hodnota "x" záporná, vyhodí vınimku "NotFiniteNumber", pretoe "n"-tá odmocnina zo záporného èísla sa nedá vyjadri.
+        /// Root metÃ³da, berie dva parametre "x" a "n". MetÃ³da poÃ¨Ã­ta "n"-tÃº odmocninu z Ã¨Ã­sla "x".
+        /// Ak je hodnota "n" rovnÃ¡ nule, vyhodÃ­ vÃ½nimku "DivideByZero".
+        /// Ak je hodnota "x" zÃ¡pornÃ¡, vyhodÃ­ vÃ½nimku "NotFiniteNumber", pretoÅ¾e "n"-tÃ¡ odmocnina zo zÃ¡pornÃ©ho Ã¨Ã­sla sa nedÃ¡ vyjadriÂ.
         /// </summary>
-        /// <param name="x">Hodnota, z ktorej chceme získa "n"-tú odmocninu</param>
+        /// <param name="x">Hodnota, z ktorej chceme zÃ­skaÂ "n"-tÃº odmocninu</param>
         /// <param name="n">Hodnota "n" (exponent)</param>
-        /// <returns>Vracia vypoèítanú "n"-tú odmocninu z èísla "x"</returns>
+        /// <returns>Vracia vypoÃ¨Ã­tanÃº "n"-tÃº odmocninu z Ã¨Ã­sla "x"</returns>
         public double Root(double x , double n)
         {
             if (n == 0.0)
@@ -143,10 +143,10 @@ namespace ivs_proj_2_calc
         }
 
         /// <summary>
-        /// Neg metóda, berie jeden parameter "x". Metóda obráti znamienko hodnoty "x".
+        /// Neg metÃ³da, berie jeden parameter "x". MetÃ³da obrÃ¡ti znamienko hodnoty "x".
         /// </summary>
-        /// <param name="x">Hodnota, ktorú chceme znegova (obráti znamienko)</param>
-        /// <returns>Vracia znegovanú hodnotu "x"</returns>
+        /// <param name="x">Hodnota, ktorÃº chceme znegovat (obrÃ¡tit znamienko)</param>
+        /// <returns>Vracia znegovanÃº hodnotu "x"</returns>
         public double Neg(double x)
         {
             return x * (-1.0); 
