@@ -546,7 +546,7 @@
         private System.Windows.Forms.Button btn_num_7;
         private System.Windows.Forms.Label labelHistory;
         private System.Windows.Forms.Button btn_napoveda;
-        private System.Windows.Forms.HelpProvider helpProvider1;
+        public System.Windows.Forms.HelpProvider helpProvider1;
     }
 }
 
