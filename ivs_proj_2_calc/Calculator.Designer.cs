@@ -50,14 +50,13 @@
             this.btn_num_9 = new System.Windows.Forms.Button();
             this.btn_num_8 = new System.Windows.Forms.Button();
             this.btn_num_7 = new System.Windows.Forms.Button();
+            this.labelHistory = new System.Windows.Forms.Label();
+            this.btn_napoveda = new System.Windows.Forms.Button();
             this.btn_neg = new System.Windows.Forms.Button();
             this.btn_backspace = new System.Windows.Forms.Button();
             this.btn_sqrt = new System.Windows.Forms.Button();
             this.btn_exp = new System.Windows.Forms.Button();
             this.btn_fact = new System.Windows.Forms.Button();
-            this.labelHistory = new System.Windows.Forms.Label();
-            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
-            this.btn_napoveda = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // resultBox
@@ -361,6 +360,30 @@
             this.btn_num_7.UseVisualStyleBackColor = false;
             this.btn_num_7.Click += new System.EventHandler(this.btn_num_Click);
             // 
+            // labelHistory
+            // 
+            this.labelHistory.AutoSize = true;
+            this.labelHistory.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Bold);
+            this.labelHistory.Location = new System.Drawing.Point(12, 8);
+            this.labelHistory.Name = "labelHistory";
+            this.labelHistory.Size = new System.Drawing.Size(99, 24);
+            this.labelHistory.TabIndex = 6001;
+            this.labelHistory.Text = "História:";
+            // 
+            // btn_napoveda
+            // 
+            this.btn_napoveda.FlatAppearance.BorderSize = 0;
+            this.btn_napoveda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_napoveda.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_napoveda.Location = new System.Drawing.Point(334, 2);
+            this.btn_napoveda.Name = "btn_napoveda";
+            this.btn_napoveda.Size = new System.Drawing.Size(79, 30);
+            this.btn_napoveda.TabIndex = 6002;
+            this.btn_napoveda.TabStop = false;
+            this.btn_napoveda.Text = "Nápoveda";
+            this.btn_napoveda.UseVisualStyleBackColor = true;
+            this.btn_napoveda.Click += new System.EventHandler(this.btn_napoveda_Click);
+            // 
             // btn_neg
             // 
             this.btn_neg.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -440,33 +463,6 @@
             this.btn_fact.UseVisualStyleBackColor = false;
             this.btn_fact.Click += new System.EventHandler(this.btn_fact_Click);
             // 
-            // labelHistory
-            // 
-            this.labelHistory.AutoSize = true;
-            this.labelHistory.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Bold);
-            this.labelHistory.Location = new System.Drawing.Point(12, 8);
-            this.labelHistory.Name = "labelHistory";
-            this.labelHistory.Size = new System.Drawing.Size(99, 24);
-            this.labelHistory.TabIndex = 6001;
-            this.labelHistory.Text = "História:";
-            // 
-            // helpProvider1
-            // 
-            this.helpProvider1.HelpNamespace = "C:\\Users\\vexor\\source\\repos\\ivs_proj_2_calc\\ivs_proj_2_calc\\HelpFile.txt";
-            // 
-            // btn_napoveda
-            // 
-            this.btn_napoveda.FlatAppearance.BorderSize = 0;
-            this.btn_napoveda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_napoveda.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btn_napoveda.Location = new System.Drawing.Point(334, 2);
-            this.btn_napoveda.Name = "btn_napoveda";
-            this.btn_napoveda.Size = new System.Drawing.Size(79, 30);
-            this.btn_napoveda.TabIndex = 6002;
-            this.btn_napoveda.Text = "Nápoveda";
-            this.btn_napoveda.UseVisualStyleBackColor = true;
-            this.btn_napoveda.Click += new System.EventHandler(this.btn_napoveda_Click);
-            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -503,11 +499,9 @@
             this.Controls.Add(this.resultBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
-            this.helpProvider1.SetHelpNavigator(this, System.Windows.Forms.HelpNavigator.Topic);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "Calculator";
-            this.helpProvider1.SetShowHelp(this, true);
             this.Text = "Kalkulačka";
             this.Load += new System.EventHandler(this.Calculator_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Calculator_KeyDown);
@@ -546,7 +540,6 @@
         private System.Windows.Forms.Button btn_num_7;
         private System.Windows.Forms.Label labelHistory;
         private System.Windows.Forms.Button btn_napoveda;
-        public System.Windows.Forms.HelpProvider helpProvider1;
     }
 }
 

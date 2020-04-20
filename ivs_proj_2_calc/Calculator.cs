@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Reflection;
+using System.Diagnostics;
+
 
 /*-------------------------------------------------------------
  - TEAM:        BRAINSTORM
@@ -194,6 +198,10 @@ namespace ivs_proj_2_calc
             if (e.KeyCode == Keys.Delete)
             {
                 btn_del.PerformClick();
+            }
+            if (e.KeyCode == Keys.F1)
+            {
+                btn_napoveda.PerformClick();
             }
 
 
@@ -648,7 +656,7 @@ namespace ivs_proj_2_calc
                             oldOperation = "";
                             break;
                         default:
-                            resultValue = mh.Root(historyValue, Int32.Parse(resultBox.Text));
+                            resultValue = mh.Root(Double.Parse(resultBox.Text), historyValue);
                             resultBox.Text = resultValue.ToString();
                             historyValue = resultValue;
                             lbl_history.Text = lbl_history.Text + historyStringValue + "=";
@@ -1131,8 +1139,11 @@ namespace ivs_proj_2_calc
         /// <param name="e">Dáta udalosti, ktoré sa posielajú do danej metódy</param>
         private void btn_napoveda_Click(object sender, EventArgs e)
         {
-           
-            Help.ShowHelp(this, helpProvider1.HelpNamespace);
+            string filename = "HelpFile.txt";
+            if (!File.Exists(filename))
+                File.WriteAllText(filename, Properties.Resources.HelpFile);
+            Process.Start(filename);
+
             btn_enter.Focus();
         }
     }

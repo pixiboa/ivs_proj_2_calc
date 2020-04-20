@@ -93,5 +93,8 @@
   <ItemGroup>
     <None Include="iconfinder_square.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="HelpFile.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

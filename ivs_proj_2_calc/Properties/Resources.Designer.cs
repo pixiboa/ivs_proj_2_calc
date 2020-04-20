@@ -61,6 +61,24 @@ namespace ivs_proj_2_calc.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Vitajte v nápovede.
+        ///
+        ///V tomto textovom súbore sa dozviete, ako používať aplikáciu Calculator.
+        ///
+        ///Hneď na začiatku spustenia si môžete všimnúť grafické rozhranie. Toto rozhranie sa skladá z tlačidiel a dvoch textových boxov. Celé grafické rozhranie
+        ///má fixnú veľkosť, ktorá sa nedá upravovať. Tlačidlá, ktoré sa nachádzajú pod výsledkom je možno aktivovať kliknutím myšou alebo stlačením tlačidla na klávesnici
+        ///pre vyžadovanú číslicu alebo operáciu.
+        ///
+        ///Zoznam klávesových skratiek:
+        ///---------------------------- [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string HelpFile {
+            get {
+                return ResourceManager.GetString("HelpFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap iconfinder_factorial {
